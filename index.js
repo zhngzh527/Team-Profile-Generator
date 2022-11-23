@@ -31,25 +31,25 @@ const addManager = async () => {
     {
       type: "input",
       name: "name",
-      message: "What is the team manager's name? (Required)",
+      message: "What is the team manager's name?",
       validate: validateName
     },
     {
       type: "input",
       name: "id",
-      message: "What is the team manager's ID? (Required)",
+      message: "What is the team manager's ID?",
       validate: validateId
     },
     {
       type: "input",
       name: "email",
-      message: "What is the team manager's email? (Required)",
+      message: "What is the team manager's email?",
       validate: validateEmail
     },
     {
       type: "input",
       name: "officeNumber",
-      message: "What is the team manager's office number? (Required)",
+      message: "What is the team manager's office number?",
       validate: (officeInput) => {
         if (officeInput) {
           return true;
@@ -70,7 +70,7 @@ const addUser = async () => {
     .prompt({
       type: "list",
       name: "role",
-      message: "Which employee are you adding? (Required)",
+      message: "Which employee are you adding?",
       choices: ["Engineer", "Intern"],
     });
   switch (choices.role) {
@@ -123,19 +123,19 @@ const addEngineer = async () => {
       {
         type: "input",
         name: "name",
-        message: "What is the engineer's name? (Required)",
+        message: "What is the engineer's name?",
         validate: validateName
       },
       {
         type: "input",
         name: "id",
-        message: "What is the engineer's ID? (Required)",
+        message: "What is the engineer's ID?",
         validate: validateId
       },
       {
         type: "input",
         name: "email",
-        message: "What is the engineer's email? (Required)",
+        message: "What is the engineer's email?",
         validate: validateEmail
       },
       {
@@ -171,19 +171,19 @@ const addIntern = async () => {
       {
         type: "input",
         name: "name",
-        message: "What is the intern's name? (Required)",
+        message: "What is the intern's name?",
         validate: validateName
       },
       {
         type: "input",
         name: "id",
-        message: "What is the intern's ID? (Required)",
+        message: "What is the intern's ID?",
         validate: validateId
       },
       {
         type: "input",
         name: "email",
-        message: "What is the intern's email? (Required)",
+        message: "What is the intern's email?",
         validate: validateEmail
       },
       {
